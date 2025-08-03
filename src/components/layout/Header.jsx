@@ -25,7 +25,10 @@ const Header = () => {
       <div className="container">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-primary-600">UAE | MENA Software Dev Group</h1>
+            <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-primary-600 truncate max-w-[280px] sm:max-w-none">
+              <span className="hidden sm:inline">UAE | MENA Software Dev Group</span>
+              <span className="sm:hidden">UAE | MENA Dev</span>
+            </h1>
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">

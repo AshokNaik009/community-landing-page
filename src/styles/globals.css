@@ -18,7 +18,7 @@ html {
   }
   
   .section-padding {
-    @apply py-16 sm:py-20 lg:py-24;
+    @apply py-12 sm:py-16 lg:py-20 xl:py-24;
   }
   
   .btn-primary {
@@ -27,5 +27,20 @@ html {
   
   .btn-secondary {
     @apply bg-white hover:bg-gray-50 text-primary-600 font-semibold py-3 px-6 rounded-lg border border-primary-600 transition-colors duration-200 inline-flex items-center gap-2;
+  }
+
+  /* Mobile-specific improvements */
+  @media (max-width: 640px) {
+    .hero-title {
+      @apply text-2xl leading-tight;
+    }
+    
+    .hero-subtitle {
+      @apply text-base leading-relaxed;
+    }
+    
+    .mobile-button {
+      @apply w-full justify-center;
+    }
   }
 }
